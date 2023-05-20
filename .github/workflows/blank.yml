@@ -5,7 +5,7 @@ jobs:
   build:
     runs-on: ubuntu-latest 
     steps:
-      - name: Test
+      - name: Run Single line 
         run: |
           echo ${{secrets.USER_NAME}}
 
@@ -20,7 +20,7 @@ jobs:
       - name: Run a multi-line script using if condition
         run: |
         
-          if [ "PASSWORD" == "Alaguraja" ]
+          if [ "$PASSWORD" == "Alaguraja" ]
           then          
             echo "Got Secret"
           fi
