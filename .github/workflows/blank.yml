@@ -20,7 +20,7 @@ jobs:
       - name: Run a multi-line script using if condition
         run: |
         
-          if [ "$PASSWORD" == "Alaguraja" ]
+          if [ "$PASSWORD" == "Alaguraja00" ]
           then          
             echo "Got Secret"
           fi
